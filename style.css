@@ -1,0 +1,13 @@
+#heading {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: blue;
+}
+
+
+.taskbar{   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    color:brown;
+}

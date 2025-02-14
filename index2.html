@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:brown;
+        }
+        
+
+        .heading-class {
+            color:blue !important; 
+        }
+
+        #heading-id{
+            color:green;
+        }
+         
+        /*rõ ràng hai thẻ đều là important nhưng thẻ #heading-id.heading-class có priority cao hơn heading-class*/
+        #heading-id.heading-class{
+            color:green !important; 
+        }
+        
+        div{
+            color:red;
+        }
+
+
+    </style> 
+    
+</head>
+<body>
+    <h1 id="heading-id"class="heading-class">welcome to my website</h1>
+    <h2 style="color:cadetblue; text-align: center">hello everyone</h2>
+
+    <div>
+        <ul>
+            <li>home</li>
+            <li>edit</li>
+            <li>exit</li>
+        </ul>
+    </div>
+
+
+    <div id="person">
+        <ol>
+            <li>ngày và giờ</li>
+            <li>họ và tên</li>
+            <li>số điện thoại</li>
+        </ol>
+
+    </div>
+</body>
+</html>

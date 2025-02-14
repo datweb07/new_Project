@@ -1,0 +1,21 @@
+h1 {
+    color:red; 
+}
+
+#person{
+    color: blue;
+}
+
+/*với việc tạo root và var như vậy sẽ thay đổi nhanh chóng các thuộc tính, ta chỉ cần thay đổi root là tự các var của các thẻ sẽ change*/
+:root{
+    --text-color:green; 
+}
+
+ol{
+    color: var(--text-color)
+}
+
+ul{
+    color: var(--text-color)
+}
+

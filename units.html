@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>units</title>
+    <style>
+        html{
+            font-size: 50px;
+        }
+
+
+        .box{
+            width: 50%; /*% phụ thuộc vào thẻ chứa nó, ở đây là thẻ body, thẻ body phụ thuộc vào diện tích của màn hình thiết bị*/
+            width: 50px;
+            height: 50px;
+            background-color: black;    
+               
+        }
+        h1{
+            font-size: 1rem;/*rem phụ thuộc vào thẻ html*/
+        }
+
+        h2{
+            font-size: 1em;/*em phụ thuộc vào thẻ gần nhất chứa nó và có cùng thuộc tính*/
+        }
+
+        /* vw: viewport width, vh: view height: phụ thuộc vào diện tích của trình duyệt */
+        .square{
+            width: 50vw;
+            height: 50vh;
+            background-color: red;
+        }
+    </style>
+</head>
+<body style="font-size: 30px;">
+    <div class="box"></div>
+    <div><h1>welcome</h1></div>
+    <div class="square"></div>
+</body>
+</html>
