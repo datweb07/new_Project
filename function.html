@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>functions</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      .box {
+        width: 100%;
+        height: 30vh;
+        background-color: rgb(189, 34, 168);
+      }
+
+      .box::after {
+        /*pseudo*/
+        content: attr(data-title);
+      }
+
+      a::after {
+        content: "(" attr(href) ")";
+      }
+
+      .box {
+        /*di chuột vào để hiện attr (hover)*/
+        background-color: green;
+        cursor: not-allowed;
+      }
+
+      h1 {
+        /*nhấn và giữ chuột để hiện attr (active)*/
+        color: blue;
+        cursor: crosshair;
+      }
+
+      ul li:first-child {
+        color: rgb(199, 28, 190);
+      }
+
+      ul li:last-child {
+        /*thay đổi attr của phần tử cuối của thẻ li là con của thẻ ul*/
+        color: red;
+      }
+
+      .box::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        background-position: bottom;
+      }
+
+      .box::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        background-position: bottom;
+      }
+
+      h1::first-letter {
+        font-size: 50px;
+        color: red;
+      }
+
+      h3::first-line {
+        color: blue;
+      }
+
+      p::selection{    /*giữ chuột để chọn*/
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <a
+      href="https://www.uhdpaper.com/2024/06/anime-girl-dragon-tattoo-4k-6280j.html?m=0"
+      >4k Wallpaper</a
+    >
+
+    <h1 style="font-style: italic">CONTENT</h1>
+
+    <ul>
+      <li>Nguyen Van A</li>
+      <li>Nguyen Van B</li>
+      <li>Nguyen Van C</li>
+    </ul>
+
+    <h3>
+      line no1 <br />
+      line no2
+    </h3>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quas porro
+      rem assumenda enim, amet doloremque incidunt delectus eos facere nisi
+      voluptatum fugiat, autem suscipit unde quisquam illo. Explicabo,
+      excepturi!
+    </p>
+  </body>
+</html>
